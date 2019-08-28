@@ -1,0 +1,243 @@
+body {
+    line-height: 1.5;
+    color: #666;
+    font-size: 14px;
+    font-family: -apple-system, Helvetica, sans-serif;
+    position: relative;
+    margin: 0;
+    /* background: #f6f6f6; */
+}
+
+
+
+.chann-nav{
+    width: 3.75rem;
+    height: 0.44rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    z-index: 50;
+}
+.chann-nav >*{
+    float: left;
+}
+.chann-back{
+    width: 0.4rem;
+    height: 100%;
+}
+.chann-back span{
+    margin: 12px 0 0 10px;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url(../image/jd-sprites.png) -20px 0 no-repeat;
+    background-size: 1000%;
+}
+.chann-search{
+    line-height: .44rem;
+    height: 0.3rem;
+    width: 2.93rem;
+    background: #f7f7f7;
+    /* background: lightblue; */
+    border-radius: .15rem;
+    margin-top: 0.07rem;
+    overflow: hidden;
+}
+.chann-search i{
+    display: block;
+    float: left;
+    background: url(../image/jd-sprites.png) no-repeat -108px 0;
+    background-size: 1000%;
+    width: 18px;
+    height: 15px;
+    margin: 9px 0 0 15px;
+}
+.chann-search input{
+    box-sizing: border-box;
+    float: left;
+    width: 85%;
+    height: 100%;
+    padding: 0 .1rem 0 .1rem;
+    background: transparent;
+    color: #232326;
+    line-height: 0.3rem;
+    font-size: 12px;
+}
+
+.chann-nav-more{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0.4rem;
+    height: 0.44rem;
+}
+.chann-nav-more span{
+    margin: 12px 12px 12px 10px;
+    width: .2rem;
+    height: .2rem;
+    background: url(../image/jd-sprites.png) no-repeat -178px -9px;
+    background-size: 1000%;
+}
+
+.slide-nav{
+    position: fixed;
+    left: 0;
+    top: 0.45rem;
+    background: #f7f7f7;
+    width: 0.85rem;
+    height: 5.74rem;
+    border-right: 1px solid #eaeaea;
+    overflow-y: scroll;
+}
+.slide-nav::-webkit-scrollbar{
+    display: none;
+}
+.slide-chans{
+    width: 100%;
+    height: 0.46rem;
+    line-height: 0.46rem;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+.slide-cover{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 0.3rem;
+}
+.active-nav{
+    background: #fff;
+    color: #e93b3d;
+}
+
+/* -------------------------------侧边栏------------------------ */
+.slide-content-box{
+    width: 2.89rem;
+    height: auto;
+    float: right;
+    margin-top: .44rem;
+    position: relative;
+    padding-bottom: 2rem;
+}
+.slide-content-box::-webkit-scrollbar{
+    display: none;
+}
+.slide-con{
+    width: 100%;
+    padding: .19rem .07rem .20rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.slide-con-tit{
+    width: 100%;
+    height: 0.21rem;
+    position: relative;
+}
+.slide-con-tit h2{
+    font-size: 14px;
+    color: #333;
+    float: left;
+}
+.con-tit-r{
+    float: right;
+    height: 100%;
+}
+.con-tit-r >*{
+    float: left;
+}
+.con-tit-r i{
+    background: url(../image/jd-sprites.png) -36px 1px no-repeat;
+    background-size:1000%;
+    display: block;
+    margin-top: .03rem;
+    width: 12px;
+    height: 12px;
+}
+.con-tit-r span{
+    display: block;
+    color: #848689;
+    font-size: 10px;
+    line-height: 1.5;
+    margin-left: 4px;
+    position: relative;
+    top: 1px;
+}
+.con-tit-r i:last-of-type{
+    background: url(../image/jd-sprites.png) -108px -29px no-repeat;
+    background-size: 1000%;
+    position: relative;
+    top: 1px;
+    width: 12px;
+    height: 12px;
+}
+
+.slide-conmain{
+    margin-top: 0.1rem;
+    overflow: hidden;
+}
+.slide-block{
+    width: 32.8%;
+    float: left;
+
+}
+.slide-block .slide-img{
+    width: 0.7rem;
+    height: 0.7rem;
+    margin: 0 auto;
+}
+.slide-block span{
+    width: 100%;
+    height: 0.32rem;
+    line-height: 1.4;
+    text-align: center;
+}
+
+
+#slide-content .con-tit-r{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+/* --------------------------底部按钮栏------------------------------ */
+/* .bottom{
+    width: 100%;
+    height: 2rem;
+    background: #e93b3d;
+    margin-top: 100px;
+    position: absolute;
+    bottom: 0;
+    right:  0;
+} */
+
+.bottom-button{
+    width: 3.75rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 31;
+    background: #fff;
+    box-shadow: 0 0 10px 0 hsla(0,6%,58%,.6);
+    -webkit-box-shadow: 0 0 10px 0 hsla(0,6%,58%,.6);
+}
+.bottom-button a{
+    width: 20%;
+    float: left;
+
+}
+.bottom-button a img{
+    width: 0.6rem;
+    height: 0.5rem;
+    margin: 0 auto;
+}
+

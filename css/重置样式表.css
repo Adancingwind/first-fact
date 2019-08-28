@@ -1,0 +1,73 @@
+/*重置样式表*/
+
+
+/*去除默认内填充、外边距*/
+*{
+    padding:0;
+    margin: 0;
+    /*-webkit-box-sizing: border-box;*/
+    /*-moz-box-sizing: border-box;*/
+    /*box-sizing: border-box;*/
+}
+/*清除列表默认点*/
+ul,ol{
+    list-style-type: none;
+    display:block;
+}
+i{
+    display: inline-block;
+}
+/*去掉下划线*/
+a{
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    /*当出现自带的间隔时，可以设置font-size：0*/
+}
+/*outline: none  去掉表单显示颜色*/
+/*border: 0  去掉边框*/
+input{
+    outline: none;
+    border: 0;
+}
+/*ie的低级版本中，img引入的图片自带边框*/
+img{
+    border:0 none;
+    width:100%;
+    /*height: 100%;*/
+    display: block;
+}
+span{
+    display: inline-block;
+}
+
+.clear::before,.clear:after{
+    content: "";
+    display: block;/*或者display:table;*/
+}
+.clear::after{
+    clear: both;
+}
+.clear{
+    zoom: 1;
+}
+
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+
+
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.inner::after{
+    display: block;
+    content: "";
+    clear: both;
+}
